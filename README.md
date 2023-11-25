@@ -8,6 +8,11 @@ This project is a template for creating Telegram bots using Python.
 
 Provide instructions on how to use your project. For example:
 
+```shell
+pip install pdm
+
+```
+
 ### Pydantic V2
 
 Pydantic is a library for data validation and settings management based on Python type annotations.
