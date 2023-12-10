@@ -17,4 +17,5 @@ def parse_command(command):
 
 def generate_uuid():
     import shortuuid
+
     return str(shortuuid.uuid())

@@ -4,13 +4,13 @@ from loguru import logger
 
 settings = Dynaconf(
     envvar_prefix="DYNACONF",
-    settings_files=['conf_dir/settings.toml', 'conf_dir/.secrets.toml'],
+    settings_files=["conf_dir/settings.toml", "conf_dir/.secrets.toml"],
     validators=[
         # Ensure some parameter meets a condition
         # Validator('AGE', lte=30, gte=10),
         # validate a value is eq in specific env
         # Validator('PROJECT', eq='hello_world', env='production'),
-    ]
+    ],
 )
 settings.validators.register(
     Validator("app.debug", condition=lambda v: isinstance(v, bool), env="DEBUG"),

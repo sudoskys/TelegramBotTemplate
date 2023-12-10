@@ -2,7 +2,6 @@
 
 ![Ruff](https://github.com/sudoskys/TelegramBotTemplate/actions/workflows/ruff.yml/badge.svg)
 
-
 ## Project Description
 
 This project is a template for creating Telegram bots using Python.
@@ -13,6 +12,13 @@ Provide instructions on how to use your project. For example:
 
 ```shell
 pip install pdm
+
+```
+
+### Change Configuration
+
+```shell
+nano pyproject.toml # Fix the name and email
 
 ```
 
@@ -41,6 +47,16 @@ pm2 stop pm2.json
 dynaconf is a Python library that provides a flexible and dynamic configuration management solution for your
 applications. It allows you to easily manage and access configuration settings from various sources such as environment
 variables, YAML files, JSON files, INI files, and more.
+
+### Pre-commit
+
+pre-commit is a framework for managing and maintaining multi-language pre-commit hooks.
+
+```shell
+pre-commit install
+pre-commit run --all-files
+
+```
 
 ### PDM
 

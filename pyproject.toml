@@ -3,7 +3,7 @@ name = ""
 version = ""
 description = ""
 authors = [
-    { name = "sudoskys", email = "coldlando@hotmail.com" },
+    { name = "github", email = "none@none.none" },
 ]
 dependencies = [
     "pydantic<3.0.0,>=2.0.0",
@@ -19,6 +19,9 @@ dependencies = [
     "dynaconf>=3.2.4",
     "pre-commit>=3.5.0",
 ]
+
+
+
 requires-python = ">=3.8"
 readme = "README.md"
 license = { text = "MIT" }
