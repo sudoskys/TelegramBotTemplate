@@ -1,6 +1,6 @@
 # TelegramBotTemplate
 
-![pylint](https://github.com/sudoskys/TelegramBotTemplate/actions/workflows/pylint.yml/badge.svg)
+![Ruff](https://github.com/sudoskys/TelegramBotTemplate/actions/workflows/ruff.yml/badge.svg)
 
 
 ## Project Description
