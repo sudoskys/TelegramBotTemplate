@@ -4,6 +4,7 @@
 # @Software: PyCharm
 from typing import Optional
 
+import requests
 from dotenv import load_dotenv
 from loguru import logger
 from pydantic import Field, model_validator
@@ -49,8 +50,13 @@ class TelegramBot(BaseSettings):
                 self.bot_id = str(_bot.id)
                 self.bot_username = _bot.username
                 self.bot_link = f"https://t.me/{self.bot_username}"
+            except requests.exceptions.ConnectTimeout:
+                logger.error(
+                    "\n🍀TelegramBot Connect Error --error ConnectTimeout, Please Check Your Network To Telegram"
+                )
+                raise requests.exceptions.ConnectTimeout
             except Exception as e:
-                logger.error(f"\n🍀TelegramBot Token Not Set --error {e}")
+                logger.error(f"\n🍀TelegramBot Connect Error --error {e}")
             else:
                 logger.success(
                     f"🍀TelegramBot Init Connection Success --bot_name {self.bot_username} --bot_id {self.bot_id}"
