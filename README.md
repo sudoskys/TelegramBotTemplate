@@ -15,7 +15,7 @@ pip install pdm
 
 ```
 
-### Change Configuration
+- Change Configuration
 
 ```shell
 nano pyproject.toml # Fix the name and email
