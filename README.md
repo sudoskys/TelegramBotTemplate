@@ -1,5 +1,8 @@
 # TelegramBotTemplate
 
+![pylint](https://github.com/sudoskys/TelegramBotTemplate/actions/workflows/pylint.yml/badge.svg)
+
+
 ## Project Description
 
 This project is a template for creating Telegram bots using Python.
